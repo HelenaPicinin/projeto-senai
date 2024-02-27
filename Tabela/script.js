@@ -22,7 +22,7 @@ function adicionarItem() {
 
     //Colocar valor nas celulas
     CelulaNome.innerHTML = nome;
-    CelulaValor.innerHTML = valor;
+    CelulaValor.innerHTML = "R$ " + valor;
     CelulaQuantidade.innerHTML = quantidade;
     CelulaDescricao.innerHTML = descricao;
 

@@ -10,40 +10,43 @@
     <title>Controle de estoque</title>
 </head>
 <body>
-    <a href="../Menu/page.html">Voltar</a>
-    <h1>Tabela</h1> 
+    <div class="form">
+        <a href="../Menu/page.html" id="voltar">←</a>
+        <h1>Tabela</h1> 
 
-    <br><br>
+        <br><br>
 
-    <div>
-        <input type="text" placeholder="Nome do produto" id="nome">
-        <br><br>
-        <input type="number" placeholder="Valor do produto" id="valor">
-        <br><br>
-        <input type="number" placeholder="Quantidade" id="quantidade">
-        <br><br>
-        <input type="text" placeholder="Descrição" id="descricao">
-        <br><br>
-    </div>
-    <div>
-        <button onclick="adicionarItem()">Adicionar</button>
-    </div>
-    <br>
-    <div>
-        <table id="tabela" border="1px">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Quantidade</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
-    <div>
-        <button onclick="exportarParaExcel()">Gerar Excel</button>
+        <div>
+            <input type="text" placeholder="Nome do produto" id="nome">
+            <br><br>
+            <input type="number" placeholder="Valor do produto" id="valor">
+            <br><br>
+            <input type="number" placeholder="Quantidade" id="quantidade">
+            <br><br>
+            <input type="text" placeholder="Descrição" id="descricao">
+            <br><br>
+        </div>
+        <div>
+            <button onclick="adicionarItem()">Adicionar</button>
+        </div>
+        <br>
+        <div>
+            <table id="tabela" border="5px">
+                    
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div>
+            <button onclick="exportarParaExcel()" >Gerar Excel</button>
+        </div>
     </div>
 </body>
 </html>
